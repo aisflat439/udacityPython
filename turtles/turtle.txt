@@ -1,0 +1,4 @@
+1) pick a distance
+loop 3x
+	2) move in any direction that distance
+	3) turn 90 degrees to the right
