@@ -16,6 +16,12 @@ def draw_square():
 		devin.forward(distance)
 		devin.right(90)
 
+	sarah = turtle.Turtle()
+	sarah.shape("arrow")
+	sarah.color("green")
+	sarah.pensize(10)
+	sarah.circle(100)
+
 	window.exitonclick()
 
 draw_square()
