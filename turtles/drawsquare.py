@@ -1,42 +1,38 @@
 import turtle
 
-distance = 100
-degrees = 90
-pen_size = 10
+s_distance = 100
+s_degrees = 90
+t_distance = 200
 tri_degrees = 120
+c_distance = 150
+pen_size = 10
 
-def draw_square():
-	devin = turtle.Turtle()
-	devin.shape("turtle")
-	devin.shapesize(3,3,5)
-	devin.color("blue")
-	devin.speed(1)
-
+def draw_square(t):
 	for x in range(0,4):
-		devin.forward(distance)
-		devin.right(degrees)
+		t.forward(s_distance)
+		t.right(s_degrees)
 
-def draw_circle():
-	sarah = turtle.Turtle()
-	sarah.shape("arrow")
-	sarah.color("green")
-	sarah.pensize(pen_size)
-	sarah.circle(distance)
+def draw_circle(t):
+	t.circle(c_distance)
 
-def draw_triangle():
-	tuna = turtle.Turtle()
-	tuna.speed(3)
-	tuna.color("white")
-
+def draw_triangle(t):
 	for x in range(0,3):
-		tuna.forward(distance)
-		tuna.left(tri_degrees)
+		t.forward(t_distance)
+		t.left(tri_degrees)
 
 window = turtle.Screen()
 window.bgcolor("red")
 
-draw_square()
-draw_circle()
-draw_triangle()
+tuna = turtle.Turtle()
+devin = turtle.Turtle()
+sarah = turtle.Turtle()
+
+sarah.color("green")
+tuna.color("white")
+devin.color("blue")
+
+draw_square(sarah)
+draw_circle(devin)
+draw_triangle(tuna)
 
 window.exitonclick()
