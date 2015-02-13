@@ -1,0 +1,2 @@
+1) set up your functions for your square turtle
+2) build a loop for your turtle to loop however many times at a slight degree change to make your circled square.
