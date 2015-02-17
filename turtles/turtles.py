@@ -51,52 +51,46 @@ def move_turtle_left(t):
 	t.pendown()
 	gx-=10
 
+def draw_stem(t):
+	myTurtle.penup()
+	myTurtle.goto(btx, bty)
+	myTurtle.pendown()
+	myTurtle.pensize(8)
+	myTurtle.goto(btx,-250)
+
 window = turtle.Screen()
 window.setup(900,900)
 window.bgcolor("blue")
 
 myTurtle = turtle.Turtle()
-blackTurtle = turtle.Turtle()
-redTurtle.color("red")
-greenTurtle.color("green")
-whiteTurtle.color("white")
-yellowTurtle.color("yellow")
-blackTurtle.color("black")
-whiteTurtle.speed(0)
-redTurtle.speed(0)
-greenTurtle.speed(0)
-yellowTurtle.speed(0)
-blackTurtle.speed(0)
-blackTurtle.pensize(15)
+myTurtle.speed(0)
 
 for y in range(0,2):
 	gx+=1
 	gy+=1
 	for x in range(0,10):
-		draw_circle(whiteTurtle)
-		move_turtle_right(whiteTurtle)
-		move_turtle_up(whiteTurtle)
-		# btx = whiteTurtle.xcor()
-		# bty = wh
+		myTurtle.color("white")
+		draw_circle(myTurtle)
+		move_turtle_right(myTurtle)
+		move_turtle_up(myTurtle)
+		btx = myTurtle.xcor()
+		bty = myTurtle.ycor()
 	for x in range(0,10):
-		draw_circle(redTurtle)
-		move_turtle_down(redTurtle)
-		move_turtle_right(redTurtle)
+		myTurtle.color("red")
+		draw_circle(myTurtle)
+		move_turtle_down(myTurtle)
+		move_turtle_right(myTurtle)
 	for x in range(0,10):
-		draw_circle(greenTurtle)
-		move_turtle_down(greenTurtle)
-		move_turtle_left(greenTurtle)
+		myTurtle.color("green")
+		draw_circle(myTurtle)
+		move_turtle_down(myTurtle)
+		move_turtle_left(myTurtle)
 	for x in range(0,10):
-		draw_circle(yellowTurtle)
-		move_turtle_up(yellowTurtle)
-		move_turtle_left(yellowTurtle)
+		myTurtle.color("yellow")
+		draw_circle(myTurtle)
+		move_turtle_up(myTurtle)
+		move_turtle_left(myTurtle)
 
-blackTurtle.penup()
-btx = whiteTurtle.xcor()
-bty = whiteTurtle.ycor()
-blackTurtle.goto(btx, bty)
-blackTurtle.pendown()
-gy = -500
-blackTurtle.goto(btx, gy)
+draw_stem(myTurtle)
 
 window.exitonclick()

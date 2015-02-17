@@ -5,3 +5,6 @@
 5) run the circleSquare method
 6) try to place 2 circles in differnt places.
 7) make a move circle and redraw method
+	7a) this is actually 4 methods
+8) make one turtle from 5 that just changes.
+9) make a draw stem method
