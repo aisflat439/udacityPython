@@ -19,6 +19,23 @@ def draw_triangle(t):
 		t.forward(t_distance)
 		t.left(tri_degrees)
 
+def moving_circle(t):
+	x = 0
+	y = 0
+	for x in range(0,50):
+		draw_circle(t)
+		t.penup()
+		t.goto(x,y)
+		t.pendown()
+		if y <= 90:
+			x = x + 10
+		elif y < (-90):
+			x = x - 10
+		if x <= 90:
+			y = y + 10
+		elif x < (-90):
+			y = y - 10
+
 window = turtle.Screen()
 window.setup(900,900)
 window.bgcolor("blue")
@@ -27,12 +44,13 @@ redTurtle = turtle.Turtle()
 greenTurtle = turtle.Turtle()
 whiteTurtle = turtle.Turtle()
 
+whiteTurtle.speed(0)
+
 redTurtle.color("red")
 greenTurtle.color("green")
 whiteTurtle.color("white")
 
-draw_square(whiteTurtle)
 draw_circle(redTurtle)
-draw_triangle(greenTurtle )
+moving_circle(whiteTurtle)
 
 window.exitonclick()

@@ -4,3 +4,4 @@
 4) add a window and test
 5) run the circleSquare method
 6) try to place 2 circles in differnt places.
+7) make a move circle and redraw method
