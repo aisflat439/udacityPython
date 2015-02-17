@@ -1,0 +1,3 @@
+1) create a triangle method
+2) create a Square method
+3) create a circle method
