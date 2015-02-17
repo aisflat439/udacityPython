@@ -1,3 +1,6 @@
 1) create a triangle method
 2) create a Square method
 3) create a circle method
+4) add a window and test
+5) run the circleSquare method
+6) try to place 2 circles in differnt places.
