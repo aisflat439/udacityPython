@@ -51,7 +51,7 @@ friends = media.TVShow(30,
 	"https://www.youtube.com/watch?v=2VbODnX0dVs",
 	10)
 
-movies = [toy_story, avatar, big_lebowski, armageddon, independence_day, amelie, rounders]
+movies = [toy_story, avatar, big_lebowski, armageddon, independence_day, amelie, rounders, friends]
 
 # friends.get_info()
 # rounders.get_info()
