@@ -1,5 +1,15 @@
 import webbrowser
 
+class Video():
+	"""Inheritable class for video objects"""
+	def __init__(self, duration, title):
+		self.duration = duration
+		self.title = title
+
+	def get_info():
+		print("Title: " + self.title)
+		print("Duration: " + self.duration)
+		
 class Movie():
 	""" This class stores movies and related information. """
 	VALID_RATINGS = ["G", "PG", "PG-13", "R"]
