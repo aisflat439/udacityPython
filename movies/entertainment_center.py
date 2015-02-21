@@ -38,4 +38,6 @@ rounders = media.Movie("Rounders",
 
 movies = [toy_story, avatar, big_lebowski, armageddon, independence_day, amelie, rounders]
 
-fresh_tomatoes.open_movies_page(movies)
+print(media.__module__)
+
+#fresh_tomatoes.open_movies_page(movies)
