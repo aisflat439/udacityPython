@@ -13,6 +13,6 @@ This is P1: Movie Trailer Website
 ##Note:
 This project used the suggested example for inheritance with a class for Video, Movie, and TVShow
 
-#How to Run:
+#*How to Run*:
 From the command line, cd into the project directory. 
 run "python entertainment_center.py" 
