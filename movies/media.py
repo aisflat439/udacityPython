@@ -39,6 +39,9 @@ class TVShow(Video):
 		self.theme_song_url = theme_song
 		self.num_seasons = number_of_seasons
 
+	def play_themesong(self):
+		webbrowser.open(self.theme_song_url)
+
 	def get_info(self):
 		print("Title: " + self.title)
 		print("Duration: " + str(self.duration))

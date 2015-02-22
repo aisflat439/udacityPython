@@ -53,6 +53,7 @@ friends = media.TVShow(30,
 
 movies = [toy_story, avatar, big_lebowski, armageddon, independence_day, amelie, rounders, friends]
 
+friends.play_themesong()
 # friends.get_info()
 # rounders.get_info()
-fresh_tomatoes.open_movies_page(movies)
+#fresh_tomatoes.open_movies_page(movies)
