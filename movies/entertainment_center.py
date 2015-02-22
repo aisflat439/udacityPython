@@ -48,10 +48,17 @@ friends = media.TVShow(30,
 	"Friends",
 	"Six friends live in New York",
 	"http://upload.wikimedia.org/wikipedia/en/thumb/8/86/Friends_titles.jpg/260px-Friends_titles.jpg",
-	"https://www.youtube.com/watch?v=2VbODnX0dVs",
+	"https://www.youtube.com/watch?v=ko-pFBY5kG8",
 	10)
 
-movies = [toy_story, avatar, big_lebowski, armageddon, independence_day, amelie, rounders, friends]
+the_wire = media.TVShow(60,
+	"The Wire",
+	"Life and Crime in Baltimore",
+	"http://upload.wikimedia.org/wikipedia/en/thumb/6/62/The_Wire.jpg/250px-The_Wire.jpg",
+	"https://www.youtube.com/watch?v=K3rZgs3dudI",
+	5)
+
+movies = [toy_story, avatar, big_lebowski, armageddon, independence_day, amelie, rounders, friends, the_wire]
 
 #print(friends.__class__.__name__)
 #print(rounders.__class__.__name__)

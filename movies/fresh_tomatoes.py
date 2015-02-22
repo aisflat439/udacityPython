@@ -130,8 +130,17 @@ def create_movie_tiles_content(movies):
     content = ''
     for movie in movies:
         if movie.__class__.__name__ == 'TVShow':
-            content += 'TEST'
-        else:
+            # Extract the youtube ID from the url
+            youtube_id_match = re.search(r'(?<=v=)[^&#]+', movie.theme_song_url)
+            youtube_id_match = youtube_id_match or re.search(r'(?<=be/)[^&#]+', movie.theme_song_url)
+            trailer_youtube_id = youtube_id_match.group(0) if youtube_id_match else None
+
+            content += movie_tile_content.format(
+                movie_title=movie.title,
+                poster_image_url=movie.show_image_url,
+                trailer_youtube_id=trailer_youtube_id
+            )
+        else: # it's a movie 
         # Extract the youtube ID from the url
             youtube_id_match = re.search(r'(?<=v=)[^&#]+', movie.trailer_youtube_url)
             youtube_id_match = youtube_id_match or re.search(r'(?<=be/)[^&#]+', movie.trailer_youtube_url)
